@@ -102,3 +102,18 @@ a {
     margin-bottom: 32px;
   }
 } */
+
+
+
+/*   OK logga   */
+
+.sectionTwo{
+  margin: 10px auto;
+}
+
+#okLogga{
+  border:1px solid black;
+  height: 155px;
+  border-radius: 10%;
+  background-color:rgba(0, 50, 150, 0.9);
+}
