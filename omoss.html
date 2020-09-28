@@ -5,11 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OK</title>
   <link rel="stylesheet" href="style/style.css">
-  <link rel="stylesheet" href="style/sectionTwo.css">
   <link rel="shortcut icon" href="../imgs/ok.svg" />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Rubik&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="logo">
+    <span class="logo-brackets">{</span><span class="ok-text">OK</span><span class="logo-brackets">}</span>
+  </div>
   <header>
     <!-- <div class="header-smallprint-container">
       <a href="#Hem" class="current">Hem</a>
@@ -17,18 +19,18 @@
       <a href="#Omoss">Om oss</a>
     </div> -->
     <div class="header-container">
-      <h1>{ OK } Hemsidor</h1>
-      <h2>Vi skapar responsiva hemsidor för alla</h2>
+      <h1 class="header-h1"><span class="logo-brackets">{</span><span class="ok-text">OK</span><span class="logo-brackets">}</span> Webbyrå</h1>
+      <h2 class="header-h2">Vi designar och utvecklar responsiva hemsidor för alla.</h2>
       <p></p>
       <div class="monitors-container">
         <div class="desktop-box">
-          <img src="imgs/desktop_v1.png" id="monitor-one" alt="desktop" width="180">
+          <img src="imgs/desktop_v3.png" id="monitor-one" class="monitors" alt="desktop" width="200">
         </div>
         <div class="laptop-box">
-          <img src="imgs/laptop_v1.png" id="monitor-two" alt="laptop" width="150">
+          <img src="imgs/laptop_v3.png" id="monitor-two" class="monitors" alt="laptop" width="170">
         </div>
         <div class="mobile-box">
-          <img src="imgs/mobile_v1.png" id="monitor-three" alt="mobile" width="60">
+          <img src="imgs/mobile_v3.png" id="monitor-three" class="monitors" alt="mobile" width="50">
         </div>
       </div>
     </div>
@@ -36,33 +38,45 @@
       <a href="#Hem" class="current">Hem</a>
       <a href="#Tidigareprojekt">Tidigare Projekt</a>
       <a href="#Omoss">Om oss</a>
+      <a href="#Kontakt">Kontakt</a>
     </div>
   </header>
   
   <main>
-
+    <section class="section1">
+      <div id="main-corner-shadow"></div>
+      <div class="description-container">
+        <h2 class="main-h2"><span class="description-vad">Vi</span> ÄR 
+          <span class="logo-brackets">{</span><span class="ok-text">OK</span><span class="logo-brackets">}</span></h2>
+        <hr class="hr1">
+        <p>
+          Vi är specialiserade på webbdesign och utveckling för småföretag. 
+          Varje rad kod skrivs för hand för att säkerställa bästa prestanda, vilket hjälper till att få fler kunder till din webbplats och ge mer intäkter till ditt företag.
+        </p>
+      </div>
+  </section>
   </main>
 
   
   <div class="sectionTwo">
-    <h1 id="sH1">Vi är {OK}</h1>
-    <h2 id="sH2">Vårt uppdrag</h2>
-    
-    <div class="text-box">
-        <p class="sText">
-        Är att ta fram billiga och bra webblösningar efter er begäran.
-        </p>
-        <p class="sText">Vi använder oss av den senaste tekniken och skapar både enklare och mer avancerade webblösningar.
-        </p>
-    </div>
+    <img src="imgs/ok.svg" alt="OK logga" id="okLogga" />
+    <h2>We Make Your Site Come True</h2>
   </div>
 
-    <div class="kontakt">
-
-    </div>
-
   <footer>
-
+    <div class="footer-smallprint">
+      <div class="smallprint-text-box">
+        Copyright © 2020 | OK Webbyrå | All Rights Reserved        
+      </div>
+    </div>
+    
   </footer>
 </body>
 </html>
+
+<!-- Saker att ha med -->
+<!-- - Vad ni erbjuder för tjänst
+- Om företaget
+- Exempel på tidigare arbeten
+- Samarbetspartners
+- Kontaktuppgifter till företag -->
