@@ -1,0 +1,29 @@
+.press-left{
+    width:50%;
+    height: 150px;
+    overflow: hidden;
+    float:left;
+    border-radius: 50%;
+}
+
+.press-right{
+    position: relative;
+    width:50%;
+    height: 150px;
+    margin-top:0px;
+}
+
+.press-left, .press-right{
+    display:inline-flex;
+    margin:0px auto;
+    text-align: left;
+}
+
+.section1{
+    height: 100%;
+    padding-bottom: 20px;
+}
+
+#prof-bild{
+    width:100%;
+}
