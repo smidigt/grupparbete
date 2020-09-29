@@ -231,7 +231,7 @@ main {
 
 .description-container {
   position: relative;
-  padding-top: 100px;
+  padding-top: 80px;
   line-height: 26px;
   width: clamp(20ch, 85%, 50ch);
   /* width: 33%; */
@@ -241,6 +241,10 @@ main {
   font-family: "Open Sans"
 }
 
+.section1:nth-of-type(1) {
+  padding-bottom: 0;
+}
+
 .bestall-nu {
   margin-top: 80px;
   width: 100%;
@@ -248,7 +252,7 @@ main {
 }
 .buy-btn {
   color: white;
-  background-color:rgba(0, 85, 197, 0.9);
+  background-color:#005fdb;
   border-radius: 3px;
   /* background: linear-gradient(3deg, rgba(0,0,0,0) 0%, rgba(0, 85, 197, 0.9) 1%, rgba(0, 85, 197, 0.9) 100%); */
 
@@ -269,9 +273,10 @@ main {
 
 .section1 {
   width: 100%;
-  height: 600px;
+  height: 100%;
   background-color: white;
   z-index: 2;
+  padding-bottom: 100px;
 
 }
 
@@ -281,6 +286,96 @@ main {
   z-index: 1;
   background-color: white;
 }
+
+/* Tidigare projekt */
+
+.tidigare-project-container {
+  position: relative;
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 24px;
+  padding: 0 64px;
+  margin: 0 auto;
+  
+}
+
+.project-hemsida1 {
+  order: 1;
+  background: url("/imgs/projek_website1.jpg");
+  
+}
+.project-text1 {
+  order: 2;
+}
+.project-hemsida2 {
+  order: 4;
+  background: url("/imgs/projek_website2.jpg");
+}
+.project-text2 {
+  order: 3;
+}
+.project-hemsida3 {
+  order: 5;
+  background: url("/imgs/projek_website3.jpg");
+}
+.project-text3 {
+  order: 6;
+}
+
+
+div[class^='project-text'] {
+  min-height: 185px; 
+  max-height: 191px;
+  max-width: 100%;
+  /* border: 2px solid black; */
+  padding: 24px;
+  box-shadow: 0 0 20px rgba(0,0,0,.2)
+}
+
+div[class^='project-hemsida'] {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  /* border: 2px solid black; */
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 185px;
+  box-shadow: 0 0 20px rgba(0,0,0,.2)
+}
+
+div[class^='project-hemsida']:hover {
+  filter: brightness(50%);
+  background-size: 120%;
+  transition: 300ms;
+  animation-name: test;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes test {
+  0% {
+    background-size: 100% 100%;
+  }
+  100% {
+    background-size: 120% 120%;
+  }
+}
+
+
+.project-img {
+  height: 100%;
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 4px;
+  /* background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; */
+  transition: 300ms;
+}
+
+
 
 
 footer {
@@ -389,6 +484,20 @@ footer {
 
   div[class^='footer-box'] {
     margin-bottom: 64px;
+  }
+
+  div[class^='project-hemsida'] {
+    order: unset;
+    grid-column: span 2;
+  }
+
+  div[class^='project-text'] {
+    order: unset;
+    grid-column: span 2;
+  }
+
+  .tidigare-project-container {
+    max-width: 500px;
   }
 
 }
