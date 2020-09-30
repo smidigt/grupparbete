@@ -36,17 +36,43 @@
       </div>
     </div>
     <div class="header-smallprint-container">
-      <a href="index.html">Hem</a>
-      <a href="#Tidigareprojekt">Tidigare Projekt</a>
-      <a href="#Omoss" class="current">Om oss</a>
-      <a href="#Kontakt">Kontakt</a>
+      <a href="#Hem">
+        <div class="navigation">
+          <a href="index.html">Hem</a>
+        </div>
+      </a>
+      <a href="index.html#Tidigareprojekt">
+        <div class="navigation">
+          Tidigare Projekt
+        </div>
+      </a>
+      <a href="omoss.html">
+        <div class="navigation current">
+          Om oss
+        </div>
+      </a>
+      <a href="#kontakt">
+        <div class="navigation">
+          Kontakt
+        </div>
+      </a>
     </div>
   </header>
   
   <main>
     <section class="section1">
       <div id="main-corner-shadow"></div>
-      <div class="description-container">
+      <div class="press-container">
+        <h2 class="main-h2">OM <span class="description-vad">OSS</span></h2>
+        <hr class="hr1">
+        <p>
+          Vi är två killar som älskar programmering och design som träffade på varandra i skolan och fick ett starkt band.
+          Vi började leka lite med tanken att starta upp något eget och marknaden bara skrek ja när vi såg vad företag och privat personer får betala för en hemsida.
+          Det var ett perfekt tillfälle att slå till och vårat mål är att vara billigast men också bäst!
+        </p>
+      </div>
+
+      <div class="press-container">
         <h2 class="main-h2">VÅRT <span class="description-vad">UPPDRAG</span></h2>
         <hr class="hr1">
         <p>
@@ -54,30 +80,82 @@
           Vi använder oss av den senaste tekniken och skapar både enklare och mer avancerade webblösningar.
         </p>
       </div>
-
-      <div class="description-container">
+  
+      <div class="press-container">
         <h2 class="main-h2">VILKA <span class="description-vad">ÄR</span> VI</h2>
         <hr class="hr1">
-
-        <div class="press-left"><img src="imgs/kl.jpg" class="prof-bild" alt="test"></div>
+  
+        <div class="press-left"><img src="imgs/pressbild.jpg" class="prof-bild" alt="test"></div>
         <div class="press-right"><p>
-          Kristoffer 29år : Programmering och träning går han igång på.
+          Kristoffer 29år : Programmerare och Designer. Drivs av utmaningar och nytänkande. Utanför arbetsplattsen är jag utforskande och gymgalen. Älskar spel i alla dess former.
         </p></div>
         <div class="press-left"><img src="imgs/omoss_oliver_bild.jpg" class="prof-bild" alt="test"></div>
         <div class="press-right"><p>
           Oliver 18år : Webbprogrammerare och Designer. När jag skriver min kod, är struktur och nogrannhet till detalj något jag alltid sträver efter. Gymmar, löptränar och är Gobal på CS:GO.
         </p></div>
       </div>
+
+      <div class="press-container" id="kontakt">
+        <h2 class="main-h2">KONTAKTA <span class="description-vad">OSS</span></h2>
+        <hr class="hr1">
+        
+        <form action="kontakt.html" class="kontakt-form">
+
+          <label for="fName"><span class="description-vad">First</span> Name!</label>
+          <input type="text" id="fName" name="firstname" placeholder="Namn">
+
+          <label for="email">Email</label>
+          <input type="text" id="email" name="Email" placeholder="E-post">
+
+          <label for="subject"><span class="description-vad">Subject</span></label>
+          <textarea id="subject" name="subject" placeholder="Tveka inte att skriva om ni har några funderingar!"></textarea>
+
+          <input type="submit" value="Send"/>
+       </form>
+        
+      </div>
+
   </section>
   </main>
 
   <footer>
-    <div class="footer-smallprint">
-      <div class="smallprint-text-box">
-        Copyright © 2020 | OK Webbyrå | All Rights Reserved        
+    <div class="footer-container">
+      <div class="footer-box1">
+        <div class="footer-logo">
+          <span class="logo-brackets">{</span><span class="ok-text">OK</span><span class="logo-brackets">}</span>          
+        </div>
+        <hr class="hr2">
+        <ul>
+          <li>Stockholm, Sverige</li>
+          <li calss="click">OKwebbyra@gmail.com</li>
+          <li calss="click">+46 70 123 45 67</li>
+        </ul>
+      </div>
+      <div class="footer-box2">
+        <h1 class="footerh1">Navigation</h1>
+        <hr class="hr2">
+        <ul>
+          <li calss="click">Hem</li>
+          <li calss="click">Tidigare Projekt</li>
+          <li calss="clicka">Om oss</li>
+          <li calss="click">Kontakt</li>
+        </ul>
+      </div>
+      <div class="footer-box2">
+        <h1 class="footerh1">Tjänster</h1>
+        <hr class="hr2">
+        <ul>
+          <li>Webbdesign</li>
+          <li>Webbutveckling</li>
+          <li>Responsiv Webbutveckling</li>
+          <li>SEO Tjänster</li>
+          <li>Logotyp Design</li>
+        </ul>
       </div>
     </div>
-    
+    <div class="footer-smallprint">
+      <p>Copyright © 2020 | OK Webbyrå | All Rights Reserved</p>       
+    </div>
   </footer>
 </body>
 </html>
