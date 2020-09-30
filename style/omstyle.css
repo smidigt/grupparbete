@@ -22,9 +22,6 @@
     text-align: left;
 }
 
-.section1{
-    padding-bottom: 20px;
-}
 
 .prof-bild{
     width:100%;
@@ -71,6 +68,9 @@ input[type=text], select, textarea{
 }
 
 input[type=submit]{
+    min-width: 200px;
+    max-width: 80%;
+    border-radius: 5%;
     background-color: rgb(255, 100, 0); ;
     color:rgba(255,255,255,0.9);
     padding:10px;
