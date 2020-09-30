@@ -1,29 +1,87 @@
 .press-left{
     width:50%;
-    height: 150px;
-    overflow: hidden;
+    height: 165px;
     float:left;
-    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0,0,0,.2);
+    padding:5px;
 }
 
 .press-right{
     position: relative;
     width:50%;
-    height: 150px;
+    height: 165px;
     margin-top:0px;
+    padding-left:10px;
+    box-shadow: 0 0 20px rgba(0,0,0,.2);
+    padding:5px;
 }
 
 .press-left, .press-right{
     display:inline-flex;
-    margin:0px auto;
+    margin:1vh auto;
     text-align: left;
 }
 
 .section1{
-    height: 100%;
     padding-bottom: 20px;
 }
 
 .prof-bild{
     width:100%;
+}
+
+.press-container{
+    position: relative;
+    padding-top: 80px;
+    line-height: 26px;
+    width: clamp(30ch, 85%, 60ch);
+    text-align: center;
+    font-family: "Open Sans";
+    margin:0px auto;
+}
+
+.kontakt-form{
+    background: linear-gradient(0deg, rgba(0, 40, 126, 0.95),  rgba(0, 91, 209, 0.9));
+    color:white;
+    padding-top:20px;
+    padding-bottom:20px;
+    letter-spacing: .2vh;
+    border-radius: 5%;
+    text-align: center;
+    font-family: "Open Sans";
+}
+
+label{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+input[type=text], select, textarea{
+    min-width: 200px;
+    max-width: 80%;
+    padding:1.5vh;
+    border:1px solid rgba(255,255,255,0.4);
+    border-radius:5%;
+    margin-top:1vh;
+    margin-bottom:1vh;
+    color:rgb(0,0,0);
+    resize: vertical;
+    display: flex;
+    margin:1vh auto;
+}
+
+input[type=submit]{
+    background-color: rgb(255, 100, 0); ;
+    color:rgba(255,255,255,0.9);
+    padding:10px;
+    border:none;
+    box-shadow: 0 0 20px rgba(255,255,255,.2);
+}
+
+@media all and (max-width: 768px) {
+    .press-left,.press-right{
+        width:100%;
+        max-height: 300px;
+        height: 100%;
+    }
 }
