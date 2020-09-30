@@ -57,7 +57,7 @@ ul {
 header {
   /* background-color: rgba(0, 70, 200, 0.9); */
   /* background: linear-gradient(0deg, rgba(0, 49, 156, 0.9),  rgba(0, 49, 156, 0.9)), url("/imgs/header_bg3.jpg"); */
-  background: linear-gradient(0deg, rgba(0, 40, 126, 0.95),  rgba(0, 91, 209, 0.9)), url("/imgs/header_bg3v2.jpg");
+  background: linear-gradient(0deg, rgba(0, 40, 126, 0.95),  rgba(0, 91, 209, 0.9)), url("../imgs/header_bg3v2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
