@@ -306,7 +306,7 @@ main {
 
 .project-hemsida1 {
   order: 1;
-  background: url("/imgs/projek_website1.jpg");
+  background: url("../imgs/projek_website1.jpg");
   
 }
 .project-text1 {
@@ -314,14 +314,14 @@ main {
 }
 .project-hemsida2 {
   order: 4;
-  background: url("/imgs/projek_website2.jpg");
+  background: url("../imgs/projek_website2.jpg");
 }
 .project-text2 {
   order: 3;
 }
 .project-hemsida3 {
   order: 5;
-  background: url("/imgs/projek_website3.jpg");
+  background: url("../imgs/projek_website3.jpg");
 }
 .project-text3 {
   order: 6;
